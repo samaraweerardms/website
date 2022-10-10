@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    
+
+
+
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: aliceblue;
+            text-align: center;
+            padding: 13px 15px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active){
+            background-color: cornflowerblue;
+
+        }
+        .active{
+            background-color: blue;
+        }
+        .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+body {
+ background-image: url("images\gallery-6.jpg");
+ background-color:cadetblue;
+}
+table, tr,th,td{
+                border: 12px solid black;
+                width: 100px;
+                height: 10px;
+            }
+            /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+}
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color:seagreen;/* Seagreen */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  /* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+window.alert("sometext");
+alert("I am an alert box!");
+
+
+}
+
+  
+        </style>
+        </head>
+        <body>
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="card">
+                <img src="C:\Users\sewwandi samaraweera\New folder\images\blog-1.jpg" alt="Mashi" style="width:100%">
+                <h1>Mashi</h1>
+                <p class="title">Nature lover</p>
+                <p>Hello Everyone</p>
+                
+                <p><button>Contact</button></p>
+              </div>
+              <!-- Slide Show -->
+<section>
+    <img class="mySlides" src="images\blog-2.jpg" style="width:100%">
+    <img class="mySlides" src="images\blog-3.jpg" style="width:100%">
+    <img class="mySlides" src="images\blog-4.jpg" style="width:100%">
+  </section>
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  
+</body>
+<table border="22">
+            
+    
+    <h2>Lessur time</h2>
+    <table border="12">
+        <tr>
+            <th>Day</th>
+            <th colspan="2">hobby and timeline</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Reading books</td>
+                            <td>4.00p.m.</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Whatch movies</td>
+                            <td>5.00p.m.</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>play badminton</td>
+                            <td>4.30p.m.</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>eat street foods</td>
+                            <td>6.30p.m.</td>
+                        </tr>
+    </table>
+    <h2>Reading with</h2>
+    <dl>
+        <dt>Html</dt>
+        <dd>Css</dd>
+        <dt>javascript</dt>
+    </dl>
+    <br>
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Sri Lanka</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Thank you for watching my page.
+      </div>
+      <!-- footer -->
+      <footer class = "py-4">
+        <div class = "container footer-row">
+            <div class = "footer-item">
+                <a href = "index.html" class = "site-brand">
+                    Mashi<br><span>Nature lover</span>
+                </a>
+                <p class = "text">Stay safe and happy</p>
+            </div>
+
+            <div class = "footer-item">
+                <h2>Follow us on: </h2>
+                <ul class = "social-links">
+                    <li>
+                        <a href = "#">
+                            <i class = "fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class = "fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class = "fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class = "fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class = "fab fa-google-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class = "footer-item">
+                <h2>Countries</h2>
+                <ul>
+                    <li><a href = "#">Sri Lanka</a></li>
+                    <li><a href = "#">Australia</a></li>
+                    <li><a href = "#">USA</a></li>
+                    <li><a href = "#">Switzerland</a></li>
+                    <li><a href = "#">Germany</a></li>
+                </ul>
+            </div>
+
+            <div class = "subscribe-form footer-item">
+                <h2>Subscribe Mashi</h2>
+                <form class = "flex">
+                    <input type = "email" placeholder="Enter Email" class = "form-control">
+                    <input type = "submit" class = "btn" value = "Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    
+</html>
